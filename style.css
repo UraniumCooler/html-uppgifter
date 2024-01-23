@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {   
+    background-color: rgb(186, 183, 0);
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  @media screen and (max-width: 850px) {
+    header .headerText {
+      font-size: 1rem;
+    }
+  }
+
+header img {
+    height: 3rem; 
+}
+
+/* header nav {
+    margin-right: 1rem;
+} */
+
+header .logo { 
+    margin-left: 1rem;
+}
+
+header .button {
+    margin-right: 1rem;
+    background: none;
+    border: none;
+}
+
+header .dropdown {
+    color: black;
+}
+
+.backgroundImage {
+    background-image: url(./images/backgroundImg.jpg);
+    max-width: 100%;
+    height: 35vw;
+    background-repeat: no-repeat;
+    aspect-ratio: auto/1931;;
+    background-size:100%;
+    background-size: cover
+}
+
+header .headerText {
+    color: black;
+    display:inline-block;
+    padding-inline: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+hr {
+    border: 2.5px solid black;
+    margin-bottom: 2rem;
+}
+
+.container1 {
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+    height: fit-content;
+
+    color: black;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: bolder;
+    text-align: center;
+    height: max-content;
+}
+
+
+.box1, .col {
+    background-color:rgb(186, 183, 0);
+    opacity: 1;
+    min-width: 10rem;
+    min-height: 10rem;
+    height: 32vh;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    border-radius: 1rem;
+
+    color: black;
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.height-control {
+    display: flex;
+    justify-content: center;
+    gap: rem;
+    height: fit-content;
+
+}
+
+.editorInformation {
+    opacity: 1;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+
+.button1 {
+    margin-left: 29rem;
+    margin-top: 2.5rem;
+    background: none;
+    border: none;
+}
+
+.text {
+    margin-top: 0.2rem;
+}
+
+.box2 {
+    background: rgb(252, 250, 148);
+    border: none;
+    margin-left: 5vw;
+    opacity: 1;
+    height: 3rem;
+    width: 90vw;
+    margin-top: 2rem;
+    border-radius: 1rem;
+
+    color: black;
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-align: center;
+    display: block;
+}
+
+/*  SECTIONS  */
+.section {
+    width: 80vw;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+    height: fit-content;
+    min-height: 100px;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 1000px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/*  SECTIONS  */
+.section1 {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+    margin-top: 2rem;
+    background-color: rgb(213, 213, 213);
+}
+
+/*  COLUMN SETUP  */
+.col1 {
+	display: block;
+	float: right;
+    font-size: 4rem;
+    font-family: monospace;
+	margin: 0% 0 1% 1.4%;
+    text-align: center;
+}
+
+
+.col1:first-child { 
+    margin: 0 auto; 
+}
+
+/*  GROUPING  */
+.group1:before,
+.group1:after { content:""; display:table; }
+.group1:after { clear:both;}
+.group1 { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { 
+    width: 100%; 
+    
+}
+.span_2_of_3 { 
+    width: 66.13%; 
+}
+.span_1_of_3 { 
+    width: 32.26%; 
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col1 {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/* .references {
+    background: rgb(213, 213, 213);
+    margin-top: 3.5rem;
+    height: fit-content;
+    display: block;
+}
+
+.refText {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: none;
+    border-color: black;
+
+    color: black;
+    font-size: 1.5rem;
+    font-family: monospace;
+} */
+
+.button { 
+    background: none;
+    border: solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+    
+}
